@@ -12,3 +12,6 @@ PS1='[\u@\h \W]\$ '
 
 # Starship
 eval "$(starship init bash)"
+
+# Neofetch greeting
+neofetch
