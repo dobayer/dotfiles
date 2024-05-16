@@ -10,18 +10,21 @@
 --
 -- NOTE: Here is where you install your plugins.
 
-require('lazy').setup({
-  -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
-  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+require("lazy").setup({
+	-- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
+	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
 
-  require 'plugins/colorschemes',
+	require("plugins/colorschemes"),
 
-  require 'plugins/telescope',
+	require("plugins/telescope"),
 
-  require 'plugins/whichkey',
-  
-  require 'plugins/treesitter',
+	require("plugins/whichkey"),
 
-  require 'plugins/lsp',
-  require 'plugins/cmp',
+	require("plugins/treesitter"),
+
+	require("plugins/lsp"),
+
+	require("plugins/cmp"),
+
+	require("plugins/conform"),
 })
