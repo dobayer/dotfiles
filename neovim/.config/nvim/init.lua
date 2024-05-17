@@ -21,8 +21,16 @@ end
 ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
--- [[ Configure and install plugins ]]
-require "lazy-plugins"
+require("lazy").setup({
+  -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
+  "tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
+
+  import = "plugins",
+}, {
+  change_detection = {
+    notify = false,
+  },
+})
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
