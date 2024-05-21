@@ -2,7 +2,7 @@
 
 Personal configuration files.
 
-## Useage
+## Usage
 The configuration files are moved or created at the repository location. Then, a symbolic link takes care of the original location.
 
 
