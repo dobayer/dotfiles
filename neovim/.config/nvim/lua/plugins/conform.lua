@@ -30,6 +30,7 @@ return { -- Autoformat
 
                 python = { "isort", "black" },
                 --
+                yaml = { "yamlfmt" },
                 -- You can use a sub-list to tell conform to run *until* a formatter
                 -- is found.
                 -- javascript = { { "prettierd", "prettier" } },
