@@ -29,18 +29,14 @@ blur = false
 padding.x = 10
 padding.y = 10
 
-decorations = "None"
+decorations = "Transparent"
 decorations_theme_variant = "Dark" #"Light" # 
 
 [font]
-
-
 normal.family = "Hack Nerd Font"
 bold.family = "Hack Nerd Font"
-
 italic.family = "Hack Nerd Font"
 bold_italic.family = "Hack Nerd Font"
-
 
 size = 10.5
 
