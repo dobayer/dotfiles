@@ -37,3 +37,6 @@ zstyle :compinstall filename '/home/t04749a/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+eval $(zoxide init zsh)
+eval $(thefuck --alias)
