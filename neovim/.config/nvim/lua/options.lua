@@ -6,6 +6,7 @@
 vim.opt.termguicolors = true
 -- vim.cmd  "colorscheme tokyonight"
 
+-- Transparent background
 vim.cmd "highlight Normal guibg=none"
 
 -- Make line numbers default
