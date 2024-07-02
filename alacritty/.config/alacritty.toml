@@ -1,3 +1,4 @@
+
 # $HOME/.config/alacritty/alacritty.toml
 # by Rito Ghosh 2023-10-06
 
@@ -14,32 +15,48 @@
 # for variables with multiple values, use "dotted keys". Like setting `padding.x = 5` under [window].
 # This is simple. If not clear, do several trials and errors.
 
-
 # Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
 # I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
-
 # https://github.com/alacritty/alacritty/tree/master#configuration
+[shell]
+program = 'Arch'
+
+[env]
+TERM = "xterm-256color"
 
 [window]
-
-dynamic_title = false
-opacity = 0.7
-blur = false
-
+dynamic_padding = true
 padding.x = 10
 padding.y = 10
 
-decorations = "Transparent"
+# "Full" | "None" | "Transparent" | "Buttonless"
+decorations = "Full"
 decorations_theme_variant = "Dark" #"Light" # 
 
+option_as_alt = "Both"
+
+dimensions.columns = 130
+dimensions.lines = 42
+position.x = 250
+position.y = 20
+
+dynamic_title = true
+opacity = 0.9
+blur = true
+
+
 [font]
-normal.family = "Hack Nerd Font"
-bold.family = "Hack Nerd Font"
-italic.family = "Hack Nerd Font"
-bold_italic.family = "Hack Nerd Font"
+normal.family = "MesloLGL Nerd Font"
+bold.family = "MesloLGL Nerd Font"
+italic.family ="MesloLGL Nerd Font"
+bold_italic.family ="MesloLGL Nerd Font"
 
-size = 10.5
+size = 14
 
-# Tip: for inspiration, look for values in the source code files of your favorite VS Code themes, and use the color picker in
-# Google to test colors before setting a value, or simply using an editor such as VS Code where colors are displayed in a 
-# small box when a HEX is detected by the editor.
+offset.x = 0  # For letter spacing (default: 0)
+offset.y = 0  # For line spacing (default: 0)
+
+# Glyph offset determines the locations of the glyphs within their cells with the default being at the bottom. 
+# Increasing x moves the glyph to the right, increasing y moves the glyph upward.
+glyph_offset = {x=0, y=0}
+
