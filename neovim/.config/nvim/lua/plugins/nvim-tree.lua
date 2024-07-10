@@ -16,4 +16,5 @@ return {
             },
         }
     end,
+    vim.keymap.set("n", "<leader>tt", vim.cmd.NvimTreeToggle, { desc = "Nvim[T]ree [T]oggle" }),
 }

@@ -70,8 +70,8 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
             end, { desc = "Goto previous [c]hange" })
 
             -- Actions
-            map("n", "<leader>hs", gitsigns.stage_hunk, { desc = "[s]tage git hunk" })
-            map("n", "<leader>hr", gitsigns.reset_hunk, { desc = "[r]eset git hunk" })
+            map("n", "<leader>hs", gitsigns.stage_hunk, { desc = "Gitsigns [s]tage git hunk" })
+            map("n", "<leader>hr", gitsigns.reset_hunk, { desc = "Gitsigns [r]eset git hunk" })
             map("v", "<leader>hs", function()
                 gitsigns.stage_hunk { vim.fn.line ".", vim.fn.line "v" }
             end)
@@ -79,19 +79,19 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
             map("v", "<leader>hr", function()
                 gitsigns.reset_hunk { vim.fn.line ".", vim.fn.line "v" }
             end)
-            map("n", "<leader>hS", gitsigns.stage_buffer, { desc = "[S]tage buffer" })
-            map("n", "<leader>hu", gitsigns.undo_stage_hunk, { desc = "[u]ndo stage hunk" })
-            map("n", "<leader>hR", gitsigns.reset_buffer, { desc = "[R]eset buffer" })
-            map("n", "<leader>hp", gitsigns.preview_hunk, { desc = "[p]review hunk" })
+            map("n", "<leader>hS", gitsigns.stage_buffer, { desc = "Gitsigns [S]tage buffer" })
+            map("n", "<leader>hu", gitsigns.undo_stage_hunk, { desc = "Gitsigns [u]ndo stage hunk" })
+            map("n", "<leader>hR", gitsigns.reset_buffer, { desc = "Gitsigns [R]eset buffer" })
+            map("n", "<leader>hp", gitsigns.preview_hunk, { desc = "Gitsigns [p]review hunk" })
             map("n", "<leader>hb", function()
-                gitsigns.blame_line { full = true, desc = "[b]lame line" }
+                gitsigns.blame_line { full = true, desc = "Gitsigns [b]lame line" }
             end)
-            map("n", "<leader>tb", gitsigns.toggle_current_line_blame, { desc = "Toggle [b]lame line" })
-            map("n", "<leader>hd", gitsigns.diffthis, { desc = "[d]iff this (git)" })
+            map("n", "<leader>tb", gitsigns.toggle_current_line_blame, { desc = "Gitsigns toggle [b]lame line" })
+            map("n", "<leader>hd", gitsigns.diffthis, { desc = "Gitsigns [d]iff this (git)" })
             map("n", "<leader>hD", function()
                 gitsigns.diffthis "~"
-            end, { desc = "[D]iff this (~)" })
-            map("n", "<leader>td", gitsigns.toggle_deleted, { desc = "Toggle [d]eleted (git)" })
+            end, { desc = "Gitsigns: [D]iff this (~)" })
+            map("n", "<leader>td", gitsigns.toggle_deleted, { desc = "Gitsigns toggle [d]eleted" })
 
             -- Text object
             map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>")
