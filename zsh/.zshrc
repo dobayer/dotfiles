@@ -31,3 +31,5 @@ compinit
 
 eval $(zoxide init zsh)
 eval $(thefuck --alias)
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
