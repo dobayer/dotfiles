@@ -18,9 +18,8 @@
 # Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
 # I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
 # https://github.com/alacritty/alacritty/tree/master#configuration
-# [shell]
-# program = 'Arch'
-
+[shell]
+program = "/usr/bin/zsh"
 [env]
 TERM = "xterm-256color"
 
