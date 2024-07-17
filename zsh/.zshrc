@@ -15,3 +15,5 @@ compinit
 eval "$(starship init zsh)"
 
 neofetch
+
+eval $(thefuck --alias)
