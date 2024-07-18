@@ -17,3 +17,4 @@ eval "$(starship init zsh)"
 neofetch
 
 eval $(thefuck --alias)
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
