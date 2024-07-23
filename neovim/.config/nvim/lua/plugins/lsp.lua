@@ -203,7 +203,7 @@ return {
                 "black",
                 "isort",
                 "ruff",
-                "ruff_lsp",
+                -- "ruff_lsp",
                 "yamlfmt",
                 "pyright",
                 "pylint",
