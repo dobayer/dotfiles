@@ -18,3 +18,15 @@ neofetch
 
 eval $(thefuck --alias)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+
+
+# Defaults --------------------------------------------------------------------
+export EDITOR="nvim"
+
+# Aliases ---------------------------------------------------------------------
+alias vim="nvim"
+alias cat="bat"
+
+# ssh agent -------------------------------------------------------------------
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
