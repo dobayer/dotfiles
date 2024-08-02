@@ -29,5 +29,3 @@ alias cat="bat"
 
 # ssh agent -------------------------------------------------------------------
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-ssh-add ~/.ssh/github
