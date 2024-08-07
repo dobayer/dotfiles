@@ -37,6 +37,7 @@
   "twilight.nvim": { "branch": "main", "commit": "da4fe0a9e1397ecd9b012c52fb34313fbd3b862f" },
   "undotree": { "branch": "master", "commit": "56c684a805fe948936cda0d1b19505b84ad7e065" },
   "venv-selector.nvim": { "branch": "regexp", "commit": "8efa1e0a8da516f5194c5e4df3362685a90fb763" },
+  "vim-flog": { "branch": "master", "commit": "dd7a1cf09d034ffa063bedfef4f13891eff06f3a" },
   "vim-fugitive": { "branch": "master", "commit": "8c8cdf4405cb8bdb70dd9812a33bb52363a87dbc" },
   "vim-sleuth": { "branch": "master", "commit": "1cc4557420f215d02c4d2645a748a816c220e99b" },
   "which-key.nvim": { "branch": "main", "commit": "af4ded85542d40e190014c732fa051bdbf88be3d" }
